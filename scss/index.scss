@@ -104,7 +104,9 @@ a {
             color: var(--);
             background-color: #ffffff;
             border: 1px solid var(--primary-color);
-
+            &.transparent {
+                background-color: rgba(0, 0, 0, 0.35);;
+            }
             &:hover {
                 background-color: var(--primary-color);
                 color: #ffffff;
