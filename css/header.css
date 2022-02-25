@@ -1,0 +1,57 @@
+.header {
+		position: relative;
+		background-color: #ffffff;
+		padding: 20px 0;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+}
+.header::before {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: var(--primary-color);
+}
+.header-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+.header-nav {
+		column-gap: 45px;
+		align-items: center;
+}
+.header-nav li a {
+		color: var(--main-text-color);
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 15px;
+		line-height: 22px;
+		font-weight: 700px;
+		text-transform: uppercase;
+}
+.header-nav__list {
+		column-gap: 40px;
+		width: 100%;
+}
+.header-nav__lang-list {
+		column-gap: 8px;
+}
+.header-nav__lang li {
+		display: flex;
+		align-items: center;
+}
+.header-nav__lang-link {
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.header-nav__lang-link.eng {
+		background-image: url(../assets/images/lang-image-eng.png);
+}
+.header-nav__lang-link.gr {
+		background-image: url(../assets/images/lang-image-gr.png);
+}
