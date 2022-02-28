@@ -1,0 +1,190 @@
+.sign-up {
+    background-color: #f4f4f4;
+}
+
+.main {
+    &-banner {
+        background-image: url(../assets/images/main-banner-bg-nohp.jpg);
+    }
+    &-form {
+        &__inner {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &__texts {
+            max-width: 750px;
+            margin: 0 auto 80px;
+        }
+        &__title {
+            position: relative;
+            margin-bottom: 50px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 1px;
+                background-color: var(--primary-color);
+                left: 50%;
+                bottom: -23px;
+                transform: translateX(-50%);
+            }
+        }
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+        &__providers {
+            &-notice {
+                margin-bottom: 10px;
+            }
+            &-inner {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 30px;
+                column-gap: 30px;
+                padding-bottom: 60px;
+                border-bottom: 1px solid #cdcdcd;
+            }
+            &-item {
+                max-width: 370px;
+                width: 100%;
+                background-color: #ffffff;
+                border: 1px solid #cdcdcd;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+                border-radius: 4px;
+            }
+            &-img {
+                min-height: 196px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid #cdcdcd;
+            }
+            &-btn {
+                width: 100%;
+                max-height: 46px;
+                border: none;
+                border-radius: 0 0 4px 4px;
+                font-family: "Roboto Condensed", sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 13px 5px;
+                text-transform: uppercase;
+                color: var(--primary-color);
+                outline: 0px solid transparent;
+                &:hover {
+                    background-color: var(--primary-color);
+                    color: #ffffff;
+                }
+                &.chosen {
+                    font-size: 0;
+                    &::before {
+                        font-family: "FontAwesome";
+                        content: "\f00c";
+                        color: var(--primary-color);
+                        font-size: 14px;
+                        line-height: 20px;
+                        border: 1px solid var(--primary-color);
+                        border-radius: 50%;
+                        padding: 5px;
+                    }
+                    &:hover {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        &__table {
+            padding: 45px 0;
+            &-title {
+                text-align: left;
+                padding: 0 0 13px;
+            }
+            &-table {
+                width: 100%;
+                border: 1px solid #cdcdcd;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+                border-radius: 4px;
+                th {
+                    padding: 15px 5px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #333333;
+                }
+                td {
+                    .table-logo {
+                        height: 35px;
+                        margin-left: 50px;
+                    }
+                    &.img-col {
+                        text-align: left;
+                    }
+                    &.subheader {
+                        padding: 10px 0;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #333333;
+                    }
+                    &[data-option] {
+                        position: relative;
+                        font-size: 0;
+                        &::before {
+                            font-family: "FontAwesome";
+                            content: "\f00c";
+                            color: #ffffff;
+                            background-color: var(--primary-color);
+                            font-size: 14px;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    &[data-ebanking] {
+                        position: relative;
+                        font-size: 0;
+                        &::before {
+                            content: "Via eBanking";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 600;
+                            padding: 9px 5px;
+                            width: 90%;
+                            color: var(--main-text-color);
+                            background-color: #2ac40018;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                tr {
+                    border-bottom: 1px solid #e7e7e7;
+                    &.white {
+                        background-color: #ffffff;
+                        td {
+                            padding: 25px 5px;
+                        }
+                    }
+                    &.transparent {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

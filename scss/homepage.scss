@@ -1,0 +1,126 @@
+.main {
+    position: relative;
+    &-banner {
+        background-image: url("../assets/images/main-banner.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        min-height: 92vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-action-box {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 45px;
+    }
+    &-title {
+        color: #ffffff;
+        text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    &-controls {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    &-scroll-btn {
+        position: absolute;
+        top: 73vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &-info {
+        margin-top: -12vh;
+        background-color: #ffffff;
+        border-radius: 4px;
+        padding: 60px 40px;
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 50px;
+            padding-bottom: 90px;
+            border-bottom: 1px solid #CDCDCD;
+        }
+        &__item {
+            max-width: 50%;
+            width: 100%;
+            text-align: center;
+        }
+        &__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #cdcdcd;
+            border-radius: 100%;
+            margin: 0 auto 25px;
+        }
+        &__title {
+            position: relative;
+            max-width: 240px;
+            min-height: 70px;
+            margin: 0 auto 35px;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -16px;
+                transform: translateX(-50%);
+                width: 30px;
+                height: 1px;
+                background-color: var(--primary-color);
+            }
+        }
+        &__text {
+            color: var(--secondary-text-color);
+        }
+    }
+}
+
+.contact {
+    max-width: 815px;
+    width: 100%;
+    margin: 0 auto 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -14px;
+            top: -3px;
+            transform: translateX(-100%);
+            width: 36px;
+            height: 36px;
+            background-image: url(../assets/icons/question-mark.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__img {
+        margin-bottom: 40px;
+    }
+    &__contacts{
+        width: 100%;
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        margin-bottom: 55px;
+        &-title{
+            padding-top: 6px;
+        }
+    }
+}
