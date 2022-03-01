@@ -1,16 +1,10 @@
 @charset "UTF-8";
-.sign-up {
+.sign-up-first {
 		background-color: #f4f4f4;
 }
 
 .main-banner {
 		background-image: url(../assets/images/main-banner-bg-nohp.jpg);
-}
-.main-form__inner {
-		background-color: #f4f4f4;
-		text-align: center;
-		padding-left: 0;
-		padding-right: 0;
 }
 .main-form__texts {
 		max-width: 750px;
@@ -129,11 +123,11 @@
 		line-height: 16px;
 		color: #333333;
 }
-.main-form__table-table td[data-option] {
+.main-form__table-table td[data-checked] {
 		position: relative;
 		font-size: 0;
 }
-.main-form__table-table td[data-option]::before {
+.main-form__table-table td[data-checked]::before {
 		font-family: "FontAwesome";
 		content: "";
 		color: #ffffff;
@@ -172,12 +166,62 @@
 .main-form__table-table tr {
 		border-bottom: 1px solid #e7e7e7;
 }
+.main-form__table-table tr.fold-row {
+		display: none;
+		text-align: left;
+}
+.main-form__table-table tr.fold-row.open {
+		display: table-row;
+}
+.main-form__table-table tr.fold-row .fold-row__inner-list {
+		padding-left: 25px;
+}
+.main-form__table-table tr.fold-row .fold-row__list-item {
+		margin-bottom: 20px;
+}
 .main-form__table-table tr.white {
 		background-color: #ffffff;
+		position: relative;
 }
 .main-form__table-table tr.white td {
 		padding: 25px 5px;
 }
+.main-form__table-table tr.white.view-row {
+		cursor: pointer;
+}
+.main-form__table-table tr.white::before {
+		position: absolute;
+		font-family: "FontAwesome";
+		content: "";
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 700;
+		color: var(--primary-color);
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+}
+.main-form__table-table tr.white.open::before {
+		content: "";
+}
+.main-form__table-table tr.heading::before {
+		visibility: hidden;
+}
 .main-form__table-table tr.transparent {
 		background-color: transparent;
+}
+.main-form__table-table tr .fold-row__inner {
+		width: 100%;
+		justify-content: space-between;
+		padding: 30px;
+}
+.main-form__table-table tr .fold-row__text-box {
+		margin-bottom: 40px;
+}
+.main-form__table-table tr .fold-row__col {
+		max-width: 540px;
+		width: 100%;
+}
+.main-form__table-table tr .contacts {
+		margin-bottom: 30px;
 }

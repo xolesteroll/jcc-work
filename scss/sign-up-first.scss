@@ -1,4 +1,4 @@
-.sign-up {
+.sign-up-first {
     background-color: #f4f4f4;
 }
 
@@ -7,12 +7,6 @@
         background-image: url(../assets/images/main-banner-bg-nohp.jpg);
     }
     &-form {
-        &__inner {
-            background-color: #f4f4f4;
-            text-align: center;
-            padding-left: 0;
-            padding-right: 0;
-        }
         &__texts {
             max-width: 750px;
             margin: 0 auto 80px;
@@ -131,7 +125,7 @@
                         line-height: 16px;
                         color: #333333;
                     }
-                    &[data-option] {
+                    &[data-checked] {
                         position: relative;
                         font-size: 0;
                         &::before {
@@ -174,14 +168,68 @@
                 }
                 tr {
                     border-bottom: 1px solid #e7e7e7;
+                    &.fold-row {
+                        display: none;
+                        text-align: left;
+                        &.open {
+                            display: table-row;
+                        }
+                        .fold-row__inner-list {
+                            padding-left: 25px;
+                        }
+                        .fold-row__list-item {
+                            margin-bottom: 20px;
+                        }
+                    }
                     &.white {
                         background-color: #ffffff;
+                        position: relative;
                         td {
                             padding: 25px 5px;
+                        }
+                        &.view-row {
+                            cursor: pointer;
+                        }
+                        &::before {
+                            position: absolute;
+                            font-family: "FontAwesome";
+                            content: "\f055";
+                            font-size: 16px;
+                            line-height: 16px;
+                            font-weight: 700;
+                            color: var(--primary-color);
+                            left: 15px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        &.open {
+                            &::before {
+                                content: "\f068";
+                            }
+                        }
+                    }
+                    &.heading {
+                        &::before {
+                            visibility: hidden;
                         }
                     }
                     &.transparent {
                         background-color: transparent;
+                    }
+                    .fold-row__inner {
+                        width: 100%;
+                        justify-content: space-between;
+                        padding: 30px;
+                    }
+                    .fold-row__text-box {
+                        margin-bottom: 40px;
+                    }
+                    .fold-row__col {
+                        max-width: 540px;
+                        width: 100%;
+                    }
+                    .contacts {
+                        margin-bottom: 30px;
                     }
                 }
             }

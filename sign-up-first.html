@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 
-<body class="sign-up d-flex flex-column h-100">
+<body class="sign-up-first d-flex flex-column h-100">
     <div id="wrap" class="flex-shrink-0">
         <div data-include="header"></div>
 
@@ -111,16 +111,17 @@
                                 </h3>
 
                                 <table class="main-form__table-table">
-                                    <tr class="white">
+                                    <tr class="white heading">
                                         <th width="25%">Local Registration </br> Authority (LRA)</th>
                                         <th width="15%">Validation in </br> Person</th>
                                         <th width="15%">Remote </br> Validation</th>
                                         <th colspan="45%">Trust Services</th>
                                     </tr>
 
-                                    
+
 
                                     <tr class="transparent">
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -133,49 +134,487 @@
                                             Person Signature Certificate</th>
                                     </tr>
 
-                                    <tr class="white">
-                                        <td class="img-col"><img class="table-logo" src="./assets/images/JCC-provider.png" alt=""></td>
-                                        <td data-option></td>
+                                    <tr class="white view-row">
+                                        <div class="toggle-btn">
+                                           <div class="btn"></div>
+                                        </div>
+                                        <td class="img-col"><img class="table-logo"
+                                                src="./assets/images/JCC-provider.png" alt=""></td>
+                                        <td data-checked></td>
                                         <td></td>
-                                        <td data-option></td>
-                                        <td data-option></td>
-                                        <td data-option></td>
+                                        <td data-checked></td>
+                                        <td data-checked></td>
+                                        <td data-checked></td>
                                     </tr>
 
-                                    <tr class="white">
-                                        <td class="img-col"><img class="table-logo" src="./assets/images/bank-of-cyprus.png" alt=""></td>
-                                        <td data-option></td>
+                                    <tr class="fold-row">
+                                        <td colspan="7">
+                                            <div class="fold-row__inner d-flex">
+                                                <div class="fold-row__col fold-row__left-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            IN PERSON
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            After applying through [LRA name] Trust Portal, you can visit
+                                                            one of the branches to complete the validation procedure with
+                                                            the identity document you entered in the request and the
+                                                            application form provided by the system.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the completion of Validation
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REQUIRED DOCUMENTS
+                                                        </h6>
+                                                        <ul class="fold-row__list marked">
+                                                            <li class="fold-row__list-item">
+                                                                CY ELECTRONIC IDENTITY (eID)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Cypriot Biometric identity card</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="fold-row__list-item">
+                                                                QUALIFIED CERTIFICATE FOR ELECTRONIC SIGNATURE (NATURAL PERSON)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Valid Identity document: Cypriot Identity Card</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fold-row__col fold-row__right-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REMOTE VALIDATION
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            Login to your eBanking account and request your eID or Qualified Signature apply without requiring in-person validation.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the submission of request
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            CONTACT DETAILS
+                                                        </h6>
+                                                        <p class="fold-row__description contacts">
+                                                           <span>Call Center:</span> <br>
+                                                           <span>+357 xx xxxxxxx</span>
+                                                        </p>
+                                                        <p class="fold-row__description contacts">
+                                                            <span>Email:</span> <br>
+                                                            <span>example@mail.com</span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="white view-row">
+                                        <td class="img-col"><img class="table-logo"
+                                                src="./assets/images/bank-of-cyprus.png" alt=""></td>
+                                        <td data-checked></td>
                                         <td data-ebanking></td>
-                                        <td data-option></td>
-                                        <td data-option></td>
-                                        <td ></td>
+                                        <td data-checked></td>
+                                        <td data-checked></td>
+                                        <td></td>
                                     </tr>
 
-                                    <tr class="white">
-                                        <td class="img-col"><img class="table-logo" src="./assets/images/info-credit.png" alt=""></td>
-                                        <td ></td>
-                                        <td ></td>
-                                        <td data-option></td>
-                                        <td data-option></td>
-                                        <td data-option></td>
+                                    <tr class="fold-row">
+                                        <td colspan="7">
+                                            <div class="fold-row__inner d-flex">
+                                                <div class="fold-row__col fold-row__left-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            IN PERSON
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            After applying through [LRA name] Trust Portal, you can visit
+                                                            one of the branches to complete the validation procedure with
+                                                            the identity document you entered in the request and the
+                                                            application form provided by the system.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the completion of Validation
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REQUIRED DOCUMENTS
+                                                        </h6>
+                                                        <ul class="fold-row__list marked">
+                                                            <li class="fold-row__list-item">
+                                                                CY ELECTRONIC IDENTITY (eID)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Cypriot Biometric identity card</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="fold-row__list-item">
+                                                                QUALIFIED CERTIFICATE FOR ELECTRONIC SIGNATURE (NATURAL PERSON)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Valid Identity document: Cypriot Identity Card</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fold-row__col fold-row__right-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REMOTE VALIDATION
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            Login to your eBanking account and request your eID or Qualified Signature apply without requiring in-person validation.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the submission of request
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            CONTACT DETAILS
+                                                        </h6>
+                                                        <p class="fold-row__description contacts">
+                                                           <span>Call Center:</span> <br>
+                                                           <span>+357 xx xxxxxxx</span>
+                                                        </p>
+                                                        <p class="fold-row__description contacts">
+                                                            <span>Email:</span> <br>
+                                                            <span>example@mail.com</span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
                                     </tr>
 
-                                    <tr class="white">
-                                        <td class="img-col"><img class="table-logo" src="./assets/images/hellenic.png" alt=""></td>
-                                        <td data-option></td>
+                                    <tr class="white view-row">
+                                        <td class="img-col"><img class="table-logo"
+                                                src="./assets/images/info-credit.png" alt=""></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td data-checked></td>
+                                        <td data-checked></td>
+                                        <td data-checked></td>
+                                    </tr>
+
+                                    <tr class="fold-row">
+                                        <td colspan="7">
+                                            <div class="fold-row__inner d-flex">
+                                                <div class="fold-row__col fold-row__left-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            IN PERSON
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            After applying through [LRA name] Trust Portal, you can visit
+                                                            one of the branches to complete the validation procedure with
+                                                            the identity document you entered in the request and the
+                                                            application form provided by the system.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the completion of Validation
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REQUIRED DOCUMENTS
+                                                        </h6>
+                                                        <ul class="fold-row__list marked">
+                                                            <li class="fold-row__list-item">
+                                                                CY ELECTRONIC IDENTITY (eID)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Cypriot Biometric identity card</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="fold-row__list-item">
+                                                                QUALIFIED CERTIFICATE FOR ELECTRONIC SIGNATURE (NATURAL PERSON)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Valid Identity document: Cypriot Identity Card</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fold-row__col fold-row__right-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REMOTE VALIDATION
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            Login to your eBanking account and request your eID or Qualified Signature apply without requiring in-person validation.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the submission of request
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            CONTACT DETAILS
+                                                        </h6>
+                                                        <p class="fold-row__description contacts">
+                                                           <span>Call Center:</span> <br>
+                                                           <span>+357 xx xxxxxxx</span>
+                                                        </p>
+                                                        <p class="fold-row__description contacts">
+                                                            <span>Email:</span> <br>
+                                                            <span>example@mail.com</span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="white view-row">
+                                        <td class="img-col"><img class="table-logo" src="./assets/images/hellenic.png"
+                                                alt=""></td>
+                                        <td data-checked></td>
                                         <td data-ebanking></td>
-                                        <td data-option></td>
-                                        <td data-option></td>
-                                        <td ></td>
+                                        <td data-checked></td>
+                                        <td data-checked></td>
+                                        <td></td>
                                     </tr>
 
-                                    <tr class="white">
-                                        <td class="img-col"><img class="table-logo" src="./assets/images/total-serve.png" alt=""></td>
-                                        <td data-option></td>
-                                        <td ></td>
-                                        <td ></td>
-                                        <td ></td>
-                                        <td ></td>
+                                    <tr class="fold-row">
+                                        <td colspan="7">
+                                            <div class="fold-row__inner d-flex">
+                                                <div class="fold-row__col fold-row__left-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            IN PERSON
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            After applying through [LRA name] Trust Portal, you can visit
+                                                            one of the branches to complete the validation procedure with
+                                                            the identity document you entered in the request and the
+                                                            application form provided by the system.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the completion of Validation
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REQUIRED DOCUMENTS
+                                                        </h6>
+                                                        <ul class="fold-row__list marked">
+                                                            <li class="fold-row__list-item">
+                                                                CY ELECTRONIC IDENTITY (eID)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Cypriot Biometric identity card</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="fold-row__list-item">
+                                                                QUALIFIED CERTIFICATE FOR ELECTRONIC SIGNATURE (NATURAL PERSON)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Valid Identity document: Cypriot Identity Card</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fold-row__col fold-row__right-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REMOTE VALIDATION
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            Login to your eBanking account and request your eID or Qualified Signature apply without requiring in-person validation.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the submission of request
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            CONTACT DETAILS
+                                                        </h6>
+                                                        <p class="fold-row__description contacts">
+                                                           <span>Call Center:</span> <br>
+                                                           <span>+357 xx xxxxxxx</span>
+                                                        </p>
+                                                        <p class="fold-row__description contacts">
+                                                            <span>Email:</span> <br>
+                                                            <span>example@mail.com</span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="white view-row">
+                                        <td class="img-col"><img class="table-logo"
+                                                src="./assets/images/total-serve.png" alt=""></td>
+                                        <td data-checked></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr class="fold-row">
+                                        <td colspan="7">
+                                            <div class="fold-row__inner d-flex">
+                                                <div class="fold-row__col fold-row__left-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            IN PERSON
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            After applying through [LRA name] Trust Portal, you can visit
+                                                            one of the branches to complete the validation procedure with
+                                                            the identity document you entered in the request and the
+                                                            application form provided by the system.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the completion of Validation
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REQUIRED DOCUMENTS
+                                                        </h6>
+                                                        <ul class="fold-row__list marked">
+                                                            <li class="fold-row__list-item">
+                                                                CY ELECTRONIC IDENTITY (eID)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Cypriot Biometric identity card</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="fold-row__list-item">
+                                                                QUALIFIED CERTIFICATE FOR ELECTRONIC SIGNATURE (NATURAL PERSON)
+                                                                <ul class="fold-row__inner-list">
+                                                                    <li>- Application Form generated by the system</li>
+                                                                    <li>- Valid Identity document: Cypriot Identity Card</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fold-row__col fold-row__right-col">
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            REMOTE VALIDATION
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            Login to your eBanking account and request your eID or Qualified Signature apply without requiring in-person validation.
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            AVERAGE TIME FOR APPROVAL
+                                                        </h6>
+                                                        <p class="fold-row__description">
+                                                            3-5 working days after the submission of request
+                                                        </p>
+                                                    </div>
+    
+                                                    <div class="fold-row__text-box">
+                                                        <h6 class="fold-fow__title">
+                                                            CONTACT DETAILS
+                                                        </h6>
+                                                        <p class="fold-row__description contacts">
+                                                           <span>Call Center:</span> <br>
+                                                           <span>+357 xx xxxxxxx</span>
+                                                        </p>
+                                                        <p class="fold-row__description contacts">
+                                                            <span>Email:</span> <br>
+                                                            <span>example@mail.com</span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
                                     </tr>
                                 </table>
                             </div>
