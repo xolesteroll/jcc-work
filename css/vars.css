@@ -1,11 +1,11 @@
 :root {
-		--primary-color: #80C242;
-		--secondary-color: #93D554;
-		--signing-hub-color: #2CC400;
-		--warning-color: #F79618;
-		--warning-hover-color: #FFB23B;
-		--error-color: #F11313;
-		--success-color: #DA1C5C;
-		--main-text-color: #5A5A5A;
+		--primary-color: #80c242;
+		--secondary-color: #93d554;
+		--signing-hub-color: #2cc400;
+		--warning-color: #f79618;
+		--warning-hover-color: #ffb23b;
+		--error-color: #f11313;
+		--success-color: #da1c5c;
+		--main-text-color: #5a5a5a;
 		--secondary-text-color: #888888;
 }

@@ -1,15 +1,26 @@
 @charset "UTF-8";
 *,
 * * {
-		margin: 0;
 		box-sizing: border-box;
 }
 
+body,
+html {
+		overflow-x: hidden;
+}
+
 body {
+		margin: 0;
 		font-family: "Roboto", sans-serif;
 		font-size: 14px;
 		line-height: 22px;
 		color: var(--main-text-color);
+}
+@media screen and (max-width: 765px) {
+		body {
+				font-size: 12px;
+				line-height: 16px;
+		}
 }
 
 .container {
@@ -71,17 +82,35 @@ h1.alt {
 		line-height: 34px;
 		font-weight: 400;
 }
+@media screen and (max-width: 765px) {
+		h1 {
+				font-size: 30px;
+				line-height: 35px;
+		}
+}
 
 h2 {
 		font-size: 26px;
 		line-height: 32px;
 		font-weight: 400;
 }
+@media screen and (max-width: 765px) {
+		h2 {
+				font-size: 20px;
+				line-height: 35px;
+		}
+}
 
 h3 {
 		font-size: 18px;
 		line-height: 24px;
 		font-weight: 500;
+}
+@media screen and (max-width: 765px) {
+		h3 {
+				font-size: 15px;
+				line-height: 19px;
+		}
 }
 
 h4 {
@@ -105,6 +134,12 @@ h6 {
 		line-height: 18px;
 		font-weight: 700;
 		text-transform: uppercase;
+}
+@media screen and (max-width: 765px) {
+		h6 {
+				font-size: 14px;
+				line-height: 16px;
+		}
 }
 
 label {
@@ -192,6 +227,11 @@ a.button.iconed {
 		line-height: 22px;
 		font-weight: 600;
 }
+@media screen and (max-width: 450px) {
+		a.button.iconed {
+				font-size: 14px;
+		}
+}
 a.button.iconed i {
 		font-size: 16px;
 		line-height: 22px;
@@ -231,7 +271,7 @@ button.submit-btn {
 		padding: 14px 3px;
 		display: block;
 		width: 100%;
-		border: 1px solid var(--secondary-color);
+		border: 1px solid var(--primary-color);
 }
 button.submit-btn:hover {
 		background-color: var(--primary-color);
@@ -370,7 +410,8 @@ input::placeholder {
 		display: block;
 }
 .input-control.active input {
-		outline: 1px solid var(--primary-color);
+		outline: 1px solid transparent;
+		border: 1px solid var(--primary-color);
 		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
 }
 .input-control__notice {
@@ -437,6 +478,13 @@ input::placeholder {
 		-ms-user-select: none;
 		user-select: none;
 }
+@media screen and (max-width: 450px) {
+		.checkbox-control label {
+				font-size: 12px;
+				line-height: 15px;
+				padding-left: 35px;
+		}
+}
 .checkbox-control .checkmark {
 		position: absolute;
 		top: 50%;
@@ -491,6 +539,11 @@ input::placeholder {
 		display: flex;
 		justify-content: center;
 }
+@media screen and (max-width: 450px) {
+		.main-banner {
+				align-items: baseline;
+		}
+}
 .main-title {
 		text-align: center;
 		padding-top: 82px;
@@ -509,6 +562,12 @@ input::placeholder {
 		column-gap: 20px;
 		max-width: 515px;
 		margin: 0 auto 70px;
+}
+@media screen and (max-width: 765px) {
+		.main-form__breadcrumbs {
+				flex-direction: column;
+				row-gap: 10px;
+		}
 }
 .main-form__breadcrumbs-item {
 		width: 32px;
@@ -546,6 +605,12 @@ input::placeholder {
 		width: 100%;
 		background-color: #cdcdcd;
 }
+@media screen and (max-width: 765px) {
+		.main-form__breadcrumbs-spacer {
+				height: 36px;
+				width: 1px;
+		}
+}
 .main-form__title {
 		text-align: left;
 		margin: 0 0 10px;
@@ -554,6 +619,11 @@ input::placeholder {
 		max-width: 510px;
 		margin: 0 auto;
 		position: relative;
+}
+@media screen and (max-width: 1025px) {
+		.main-form__form {
+				margin: 0 10px;
+		}
 }
 .main-form__controls {
 		margin-bottom: 60px;
@@ -576,6 +646,14 @@ input::placeholder {
 		column-gap: 20px;
 		align-items: center;
 }
+@media screen and (max-width: 1025px) {
+		.main-form__row {
+				flex-direction: column;
+		}
+		.main-form__row * {
+				max-width: 100% !important;
+		}
+}
 .main-form__notice {
 		position: absolute;
 		top: 11px;
@@ -584,6 +662,13 @@ input::placeholder {
 		font-size: 14px;
 		line-height: 18px;
 		color: #f79618;
+}
+@media screen and (max-width: 450px) {
+		.main-form__notice {
+				font-size: 10px;
+				line-height: 14px;
+				top: 30px;
+		}
 }
 .main-form__acceptance {
 		border: 1px solid #cdcdcd;
@@ -597,6 +682,12 @@ input::placeholder {
 		padding: 11px 15px;
 		background-color: #ffffff;
 		border-bottom: 1px solid #e7e7e7;
+}
+@media screen and (max-width: 450px) {
+		.main-form__acceptance-title {
+				font-size: 13px;
+				line-height: 14px;
+		}
 }
 .main-form__acceptance-terms {
 		padding: 14px;
@@ -618,6 +709,11 @@ input::placeholder {
 		position: relative;
 		margin-bottom: 40px;
 }
+@media screen and (max-width: 765px) {
+		.contact__title {
+				margin-left: 25px;
+		}
+}
 .contact__title::before {
 		content: "";
 		position: absolute;
@@ -631,8 +727,21 @@ input::placeholder {
 		background-repeat: no-repeat;
 		background-position: center;
 }
+@media screen and (max-width: 765px) {
+		.contact__title::before {
+				left: -5px;
+				top: 4px;
+				width: 25px;
+				height: 25px;
+		}
+}
 .contact__img {
 		margin-bottom: 40px;
+}
+@media screen and (max-width: 340px) {
+		.contact__img img {
+				max-width: 250px;
+		}
 }
 .contact__contacts {
 		width: 100%;
@@ -640,6 +749,12 @@ input::placeholder {
 		column-gap: 30px;
 		align-items: center;
 		margin-bottom: 55px;
+}
+@media screen and (max-width: 1025px) {
+		.contact__contacts {
+				flex-direction: column;
+				row-gap: 20px;
+		}
 }
 .contact__contacts-title {
 		padding-top: 6px;

@@ -1,3 +1,10 @@
+$notebook: 1350px;
+$tablet: 1025px;
+$phone: 765px;
+$small-phone: 450px;
+$smallest-phone: 340px;
+
+
 .sign-in {
     background-color: #f4f4f4;
 }
@@ -9,6 +16,17 @@
     &-form {
         &__inner {
             background-color: #f4f4f4;
+            @media screen and (max-width: $phone) {
+                padding: 20px 0;
+            }
+        }
+        &__form {
+            @media screen and (max-width: $phone) {
+                padding: 0 20px;
+            }
+            @media screen and (max-width: $smallest-phone) {
+                padding: 0 10px;
+            }
         }
     }
 }

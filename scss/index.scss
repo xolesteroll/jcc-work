@@ -1,14 +1,29 @@
+$notebook: 1350px;
+$tablet: 1025px;
+$phone: 765px;
+$small-phone: 450px;
+$smallest-phone: 340px;
+
 *,
 * * {
-    margin: 0;
     box-sizing: border-box;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
 body {
+    margin: 0;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 22px;
     color: var(--main-text-color);
+    @media screen and (max-width: $phone) {
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 
 .container {
@@ -69,18 +84,30 @@ h1 {
         line-height: 34px;
         font-weight: 400;
     }
+    @media screen and (max-width: $phone) {
+        font-size: 30px;
+        line-height: 35px;
+    }
 }
 
 h2 {
     font-size: 26px;
     line-height: 32px;
     font-weight: 400;
+    @media screen and (max-width: $phone) {
+        font-size: 20px;
+        line-height: 35px;
+    }
 }
 
 h3 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
+    @media screen and (max-width: $phone) {
+        font-size: 15px;
+        line-height: 19px;
+    }
 }
 
 h4 {
@@ -104,6 +131,10 @@ h6 {
     line-height: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    @media screen and (max-width: $phone) {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 label {
@@ -188,6 +219,9 @@ a {
             font-size: 16px;
             line-height: 22px;
             font-weight: 600;
+            @media screen and (max-width: $small-phone) {
+                font-size: 14px;
+            }
             i {
                 font-size: 16px;
                 line-height: 22px;
@@ -231,7 +265,7 @@ button {
         padding: 14px 3px;
         display: block;
         width: 100%;
-        border: 1px solid var(--secondary-color);
+        border: 1px solid var(--primary-color);
         &:hover {
             background-color: var(--primary-color);
             color: #ffffff;
@@ -383,7 +417,8 @@ input::placeholder {
             display: block;
         }
         input {
-            outline: 1px solid var(--primary-color);
+            outline: 1px solid transparent;
+            border: 1px solid var(--primary-color);
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
         }
     }
@@ -452,6 +487,11 @@ input::placeholder {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        @media screen and (max-width: $small-phone) {
+            font-size: 12px;
+            line-height: 15px;
+            padding-left: 35px;
+        }
     }
     .checkmark {
         position: absolute;
@@ -514,6 +554,9 @@ input::placeholder {
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
+        @media screen and (max-width: $small-phone) {
+            align-items: baseline;
+        }
     }
     &-title {
         text-align: center;
@@ -534,6 +577,10 @@ input::placeholder {
             column-gap: 20px;
             max-width: 515px;
             margin: 0 auto 70px;
+            @media screen and (max-width: $phone) {
+                flex-direction: column;
+                row-gap: 10px;
+            }
             &-item {
                 width: 32px;
                 height: 32px;
@@ -569,6 +616,10 @@ input::placeholder {
                 height: 1px;
                 width: 100%;
                 background-color: #cdcdcd;
+                @media screen and (max-width: $phone) {
+                    height: 36px;
+                    width: 1px;
+                }
             }
         }
         &__title {
@@ -579,6 +630,9 @@ input::placeholder {
             max-width: 510px;
             margin: 0 auto;
             position: relative;
+            @media screen and (max-width: $tablet) {
+               margin: 0 10px;
+            }
         }
         &__controls {
             margin-bottom: 60px;
@@ -600,6 +654,12 @@ input::placeholder {
         &__row {
             column-gap: 20px;
             align-items: center;
+            @media screen and (max-width: $tablet) {
+                flex-direction: column;
+                & * {
+                    max-width: 100% !important;
+                }
+            }
         }
         &__notice {
             position: absolute;
@@ -609,6 +669,11 @@ input::placeholder {
             font-size: 14px;
             line-height: 18px;
             color: #f79618;
+            @media screen and (max-width: $small-phone) {
+                font-size: 10px;
+                line-height: 14px;
+                top: 30px;
+            }
         }
         &__acceptance {
             border: 1px solid #cdcdcd;
@@ -621,6 +686,10 @@ input::placeholder {
                 padding: 11px 15px;
                 background-color: #ffffff;
                 border-bottom: 1px solid #e7e7e7;
+                @media screen and (max-width: $small-phone) {
+                    font-size: 13px;
+                    line-height: 14px;
+                }
             }
             &-terms {
                 padding: 14px;
@@ -643,6 +712,9 @@ input::placeholder {
     &__title {
         position: relative;
         margin-bottom: 40px;
+        @media screen and (max-width: $phone) {
+            margin-left: 25px;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -655,10 +727,21 @@ input::placeholder {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            @media screen and (max-width: $phone) {
+                left: -5px;
+                top: 4px;
+                width: 25px;
+                height: 25px;
+            }
         }
     }
     &__img {
         margin-bottom: 40px;
+        @media screen and (max-width: $smallest-phone) {
+            img {
+                max-width: 250px;
+            }
+        }
     }
     &__contacts {
         width: 100%;
@@ -666,6 +749,10 @@ input::placeholder {
         column-gap: 30px;
         align-items: center;
         margin-bottom: 55px;
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
         &-title {
             padding-top: 6px;
         }

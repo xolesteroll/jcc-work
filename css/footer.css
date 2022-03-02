@@ -18,6 +18,21 @@
 }
 .footer-nav__list {
 		column-gap: 35px;
+		display: flex;
+		justify-content: center;
+}
+.footer-nav__list li a:hover {
+		color: var(--primary-color);
+}
+@media screen and (max-width: 765px) {
+		.footer-nav__list {
+				display: block;
+		}
+		.footer-nav__list li a {
+				display: inline-block;
+				width: 100%;
+				padding: 10px 5px;
+		}
 }
 .footer-nav__item a {
 		text-transform: uppercase;

@@ -13,6 +13,7 @@
 .main-form__title {
 		position: relative;
 		margin-bottom: 50px;
+		text-align: center;
 }
 .main-form__title::before {
 		content: "";
@@ -37,6 +38,11 @@
 		column-gap: 30px;
 		padding-bottom: 60px;
 		border-bottom: 1px solid #cdcdcd;
+}
+@media screen and (max-width: 1350px) {
+		.main-form__providers-inner {
+				justify-content: center;
+		}
 }
 .main-form__providers-item {
 		max-width: 370px;
@@ -89,6 +95,7 @@
 }
 .main-form__table {
 		padding: 45px 0;
+		overflow-x: auto;
 }
 .main-form__table-title {
 		text-align: left;
@@ -96,6 +103,7 @@
 }
 .main-form__table-table {
 		width: 100%;
+		min-width: 1150px;
 		border: 1px solid #cdcdcd;
 		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
 		border-radius: 4px;

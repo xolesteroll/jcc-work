@@ -1,4 +1,9 @@
-$(document).ready(() => {
+$(document).ready(function () {
+  const burgerBtn = document.querySelector(".header-nav__toggle-btn")
+  const header = document.querySelector(".header")
+  console.log(burgerBtn, header)
+
+
   $(function () {
     const includes = $('[data-include]')
     $.each(includes, function () {
@@ -19,20 +24,25 @@ $(document).ready(() => {
     $(this).prev(".input-popup").addClass("hidden")
   })
 
-  $(".faq-list__item").on('click', function () {
-    $(this).toggleClass('opened')
+  $(".faq-list__item").on("click", function () {
+    $(this).toggleClass("opened")
   })
 
-  const inputs = document.querySelectorAll('input')
+
+ 
+
+  const inputs = document.querySelectorAll("input")
 
   inputs.forEach(input => {
-    input.addEventListener('focus', () => {
-      input.parentElement.classList.add('active')
+    input.addEventListener("focus", () => {
+      input.parentElement.classList.add("active")
     })
-    input.addEventListener('blur', () => {
-      input.parentElement.classList.remove('active')
+    input.addEventListener("blur", () => {
+      input.parentElement.classList.remove("active")
     })
   })
+
+
 
 });
 

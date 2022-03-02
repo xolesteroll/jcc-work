@@ -12,6 +12,11 @@
 		justify-content: center;
 		align-items: center;
 }
+@media screen and (max-width: 765px) {
+		.main-banner {
+				align-items: baseline;
+		}
+}
 .main-action-box {
 		max-width: 430px;
 		width: 100%;
@@ -19,6 +24,11 @@
 		flex-direction: column;
 		justify-content: space-between;
 		row-gap: 45px;
+}
+@media screen and (max-width: 765px) {
+		.main-action-box {
+				margin-top: 100px;
+		}
 }
 .main-title {
 		color: #ffffff;
@@ -31,11 +41,23 @@
 		justify-content: center;
 		column-gap: 30px;
 }
+@media screen and (max-width: 450px) {
+		.main-controls {
+				flex-direction: column;
+				align-items: center;
+				row-gap: 15px;
+		}
+}
 .main-scroll-btn {
 		position: absolute;
 		top: 73vh;
 		left: 50%;
 		transform: translateX(-50%);
+}
+@media screen and (max-width: 765px) {
+		.main-scroll-btn {
+				top: 65vh;
+		}
 }
 .main-info {
 		margin-top: -12vh;
@@ -43,17 +65,40 @@
 		border-radius: 4px;
 		padding: 60px 40px;
 }
+@media screen and (max-width: 1025px) {
+		.main-info {
+				margin-top: -12vh !important;
+				max-width: 75vw;
+				width: fit-content;
+				margin: 0 auto;
+				padding: 20px 10px;
+		}
+}
+@media screen and (max-width: 450px) {
+		.main-info {
+				margin-top: -12vh !important;
+				max-width: 75vw;
+				width: fit-content;
+				margin: 0 auto;
+				padding: 20px 0;
+		}
+}
 .main-info__inner {
 		display: flex;
 		flex-wrap: wrap;
 		row-gap: 50px;
 		padding-bottom: 90px;
-		border-bottom: 1px solid #CDCDCD;
+		border-bottom: 1px solid #cdcdcd;
 }
 .main-info__item {
 		max-width: 50%;
 		width: 100%;
 		text-align: center;
+}
+@media screen and (max-width: 1025px) {
+		.main-info__item {
+				max-width: 100%;
+		}
 }
 .main-info__img {
 		display: flex;
@@ -64,6 +109,24 @@
 		border: 1px solid #cdcdcd;
 		border-radius: 100%;
 		margin: 0 auto 25px;
+}
+@media screen and (max-width: 450px) {
+		.main-info__img {
+				width: 200px;
+				height: 200px;
+		}
+		.main-info__img img {
+				max-width: 100px;
+		}
+}
+@media screen and (max-width: 340px) {
+		.main-info__img {
+				width: 150px;
+				height: 150px;
+		}
+		.main-info__img img {
+				max-width: 75px;
+		}
 }
 .main-info__title {
 		position: relative;
