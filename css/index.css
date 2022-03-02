@@ -299,6 +299,14 @@ input::placeholder {
 		right: -5px;
 		transform: translate(100%, -50%);
 }
+@media screen and (max-width: 1350px) {
+		.input-popup {
+				right: auto;
+				left: 0;
+				top: -20px;
+				transform: translateY(-100%);
+		}
+}
 .input-popup.hidden {
 		display: none;
 }
@@ -316,6 +324,14 @@ input::placeholder {
 		background-color: #ffffff;
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 		clip-path: inset(0px 0px -4px -4px);
+}
+@media screen and (max-width: 1350px) {
+		.input-popup::before {
+				top: auto;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%, 50%) rotate(-45deg);
+		}
 }
 .input-popup__list li {
 		position: relative;
