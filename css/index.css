@@ -685,9 +685,10 @@ input::placeholder {
 		margin: 0 auto;
 		position: relative;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 765px) {
 		.main-form__form {
 				margin: 0 10px;
+				max-width: 100%;
 		}
 }
 .main-form__controls {

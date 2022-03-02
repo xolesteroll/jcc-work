@@ -42,7 +42,7 @@
 		font-family: "Roboto Condensed", sans-serif;
 		font-size: 15px;
 		line-height: 22px;
-		font-weight: 700px;
+		font-weight: 700;
 		text-transform: uppercase;
 }
 .header-nav__list {
@@ -90,12 +90,20 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		opacity: 0.25;
+		transition: opacity 0.2s;
+}
+.header-nav__lang-link:hover {
+		opacity: 1;
 }
 .header-nav__lang-link.eng {
 		background-image: url(../assets/images/lang-image-eng.png);
 }
 .header-nav__lang-link.gr {
 		background-image: url(../assets/images/lang-image-gr.png);
+}
+.header-nav__lang-link.active {
+		opacity: 1;
 }
 .header-nav__toggle-btn {
 		border: none;

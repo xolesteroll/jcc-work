@@ -39,6 +39,7 @@ $(document).ready(function () {
     })
   })
 
+  // Custom Select styles
   let x, i, j, l, ll, selElmnt, a, b, c;
   /* Look for any elements with the class "select-control": */
   x = document.getElementsByClassName("select-control");

@@ -697,8 +697,9 @@ input::placeholder {
             max-width: 510px;
             margin: 0 auto;
             position: relative;
-            @media screen and (max-width: $tablet) {
+            @media screen and (max-width: $phone) {
                 margin: 0 10px;
+                max-width: 100%;
             }
         }
         &__controls {
